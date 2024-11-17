@@ -23,7 +23,6 @@ const Signup = () => {
       <div className="border-2 rounded-xl border-blue-600 bg-white shadow-lg py-10 px-16">
         <form onSubmit={submitHandler} className="flex flex-col items-center justify-center">
           <h1 className="text-black text-3xl font-extrabold mb-8">SIGN UP</h1>
-
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -32,8 +31,6 @@ const Signup = () => {
             type="text"
             placeholder="Enter your Name"
           />
-
-      
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -42,8 +39,6 @@ const Signup = () => {
             type="email"
             placeholder="Enter your email"
           />
-
-          {/* Password Input */}
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -52,8 +47,6 @@ const Signup = () => {
             type="password"
             placeholder="Enter your Password"
           />
-
-          {/* Age Input */}
           <input
             value={age}
             onChange={(e) => setAge(e.target.value)}
@@ -62,8 +55,6 @@ const Signup = () => {
             type="number"
             placeholder="Enter your Age"
           />
-
-          {/* Place Input */}
           <input
             value={place}
             onChange={(e) => setPlace(e.target.value)}
@@ -72,16 +63,12 @@ const Signup = () => {
             type="text"
             placeholder="Enter your Location"
           />
-
-          {/* Signup Button */}
           <button
             type="submit"
             className="text-white bg-blue-600 font-semibold text-lg py-2 px-8 w-full rounded-full mt-5 hover:bg-blue-700 transition duration-300"
           >
             Sign Up
           </button>
-
-          {/* Login Link */}
           <div className="mt-6">
             <p className="text-black">
               Already have an account?{' '}
